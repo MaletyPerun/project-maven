@@ -50,6 +50,7 @@
         <resources>
             <resource>
                 <directory>${project.build.directory}/lib</directory>
+                <targetPath>lib/</targetPath>
             </resource>
         </resources>
 
@@ -98,6 +99,7 @@
                     <archive>
                         <manifest>
                             <addClasspath>true</addClasspath>
+                            <classpathPrefix>lib/</classpathPrefix>
                             <mainClass>org.eclipse.jdt.internal.jarinjarloader.JarRsrcLoader</mainClass>
                         </manifest>
                         <manifestEntries>
